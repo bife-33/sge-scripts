@@ -59,7 +59,7 @@ sed -i "s:STABLE=.*:STABLE=${SSTABLE}:g" /var/docker/${SSCRIPTS}/smeld3.1.sh
 # Executando atualizar_scripts_sge.sh
 echo " >> Executando atualizar_scripts_sge.sh..."
 
-cd /var/docker/$SSCRIPTS && ./atualizar_scripts_sge.sh
+cd /var/docker/$SSCRIPTS && chmod +x atualizar_scripts_sge.sh && ./atualizar_scripts_sge.sh
 
 echo " >> Instalação concluída com sucesso!"
 echo ""
