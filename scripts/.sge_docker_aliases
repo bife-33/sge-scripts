@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Atalhos para o comando sge
+alias sge='/var/www/.scripts/sge.sh'
+
+# Atalhos para banco de dados
+alias syncdb='cd /var/www/solisge && php ./miolo20/modules/basic/classes/sconsolesyncdb.php -mfalse'
+alias syncdbt='cd /var/www/solisge && php ./miolo20/modules/basic/classes/sconsolesyncdb.php'
+alias psge='sudo -i -u postgres psql solisge';
+
+# Atalhos para a navegação das pastas
+alias core='cd /var/www/portal'
+alias cmpt='cd /var/www/solisge/competo'
+alias inst='cd /var/www/instalador'
+alias home='cd /var/www/solisge/'
+alias prt='cd /var/www/solisge/miolo26/modules'
+alias m20='cd /var/www/solisge/miolo20/'
+alias m25='cd /var/www/solisge/miolo25/'
+alias m26='cd /var/www/solisge/miolo26/'
+
+# Atalhos para importação / relatórios
+alias stimp='rm -r /var/www/solisge/miolo20/modules/basic/upload/status_importacao'
+alias stimp-t='tail -f /var/www/solisge/miolo20/modules/basic/upload/status_importacao'
+alias chr="chmod 777 -Rf /var/www/solisge/miolo20/cliente/iReport && ls -l /var/www/solisge/miolo20/cliente/iReport"
+
+# Atalhos para edição de scripts
+alias src='source ~/.bashrc'
+alias .rc='sudo nano ~/.bashrc && src'
+alias .sge='sudo nano /var/www/.scripts/.sge_docker_aliases'
+
+# Atalhos para commit
+#alias scommit='sudo /var/www/.scripts/.scommit.sh' # Não finalizado
+alias sdiff='sudo /var/www/.scripts/.sdiff.sh'
+alias versao="echo $( echo ${CONTAINERNAME} | cut -d '-' -f 2);"
