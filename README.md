@@ -6,11 +6,11 @@ Scripts úteis para facilitar uso do SolisGE dentro e fora do docker.
 
 **Obs:** Executar comandos com o usuário _root_
 
-1. Definir nome dos diretórios do SolisGE e da pasta de Scripts:
+1. Definir nome dos seus diretórios do SolisGE e da pasta de Scripts:
 ```bash
-export TRUNK=solisge-xxx
-export BETA=solisge-yyy
-export STABLE=solisge-zzz
+export TRUNK=solisge_trunk
+export BETA=solisge_beta
+export STABLE=solisge_stable
 export SCRIPTS=sge-scripts
 ```
 2. Download dos arquivos:
